@@ -6,6 +6,10 @@ description      'Installs/Configures rsc_security_updates'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.1.0'
 
+supports "centos"
+supports "redhat"
+supports "ubuntu"
+
 recipe "rsc_security_updates::default", "Enable security updates"
 
 attribute "rsc_security_updates/security_updates",
