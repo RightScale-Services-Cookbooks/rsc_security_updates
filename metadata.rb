@@ -10,6 +10,8 @@ supports "centos"
 supports "redhat"
 supports "ubuntu"
 
+depends 'marker', '~> 1.0.1'
+
 recipe "rsc_security_updates::default", "Enable security updates"
 
 attribute "rsc_security_updates/security_updates",

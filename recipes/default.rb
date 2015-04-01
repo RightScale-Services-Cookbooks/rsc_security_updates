@@ -6,6 +6,10 @@
 # http://www.rightscale.com/terms.php and, if applicable, other agreements
 # such as a RightScale Master Subscription Agreement.
 
+marker 'recipe_start_rightscale' do
+  template 'rightscale_audit_entry.erb'
+end
+
 if node[:rsc_security_updates][:security_updates] == "enable"
   log "  Enabling security updates."
   case node[:platform]
