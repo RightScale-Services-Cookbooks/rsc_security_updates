@@ -6,8 +6,6 @@
 # http://www.rightscale.com/terms.php and, if applicable, other agreements
 # such as a RightScale Master Subscription Agreement.
 
-rightscale_marker
-
 if node[:rsc_security_updates][:security_updates] == "enable"
   log "  Enabling security updates."
   case node[:platform]
