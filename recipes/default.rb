@@ -8,7 +8,7 @@
 
 rightscale_marker
 
-if node[:rsc_security_updates]][:security_updates] == "enable"
+if node[:rsc_security_updates][:security_updates] == "enable"
   log "  Enabling security updates."
   case node[:platform]
   when "ubuntu"
