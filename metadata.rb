@@ -6,4 +6,12 @@ description      'Installs/Configures rsc_security_updates'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.1.0'
 
-recipe "rsc_security_updates::default", "Enables security updates"
+recipe "rsc_security_updates::default", "Enable security updates"
+
+attribute "rsc_security_updates/security_updates",
+  :description => "Enable Security Updates",
+  :recipes     => ["rsc_security_updates::default"],
+  :type        => "string",
+  :display     => "rsc_security_updates/security_updates",
+  :choice      => ["enable", "disable"],
+  :required    => "required"
