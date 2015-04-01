@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: rsc_skeleton_cookbook
+# Cookbook Name:: rsc_security_updates
 # Recipe:: default
 #
 # Copyright (C) 2014 RightScale Inc

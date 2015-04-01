@@ -80,7 +80,7 @@ Vagrant.configure("2") do |config|
     }
 
     chef.run_list = [
-        "recipe[rsc_skeleton_cookbook::default]"
+        "recipe[rsc_security_updates::default]"
     ]
   end
 end
