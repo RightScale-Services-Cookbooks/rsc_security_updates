@@ -6,8 +6,6 @@ description      'Installs/Configures rsc_security_updates'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.1.0'
 
-supports "centos"
-supports "redhat"
 supports "ubuntu"
 
 depends 'marker', '~> 1.0.1'
