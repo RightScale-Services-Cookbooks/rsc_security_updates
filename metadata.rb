@@ -22,7 +22,7 @@ attribute "rsc_security_updates/security_updates",
   :required    => "required"
 
 attribute "rsc_security_updates/apply_security_updates",
-  :description => "Automatically download and install new security updates?"
+  :description => "Automatically download and install new security updates?",
   :recipes     => ["rsc_security_updates::install"],
   :type        => "string",
   :display     => "rsc_security_updates/security_updates",

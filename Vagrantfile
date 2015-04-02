@@ -6,7 +6,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network :private_network, ip: "33.33.33.10"
   config.ssh.max_tries = 40
   config.ssh.timeout   = 120
-  config.berkshelf.enabled = true
+#  config.berkshelf.enabled = true
   config.vm.provision :chef_solo do |chef|
     chef.run_list = [
       "recipe[rsc_security_updates::default]"
