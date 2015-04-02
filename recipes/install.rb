@@ -16,7 +16,7 @@ end
 if node[:rsc_security_updates][:apply_security_updates] == "yes"
   case node[:platform]
   when "ubuntu"
-    package "unattented-upgrades" do
+    package "unattended-upgrades" do
       action :install
     end
 
