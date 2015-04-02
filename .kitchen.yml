@@ -17,13 +17,13 @@ provisioner:
   name: chef_solo
 
 platforms:
-- name: centos-6.4
+- name: ubuntu-14.04
   driver_config:
-    box: opscode-centos-6.4
-    box_url: https://opscode-vm-bento.s3.amazonaws.com/vagrant/opscode_centos-6.4_provisionerless.box
+    box: opscode-ubuntu-14.04
+    box_url: http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-14.04_chef-provisionerless.box
 
 suites:
   - name: primary
     run_list:
-      - recipe["skeleton"]
+      - recipe["default"]
     attributes:
