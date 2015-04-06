@@ -6,11 +6,14 @@
 
 # Usage
 
+* This cookbook will allow security updates from upstream and
+also automatically installed if specified. Instructions for Ubuntu [here](https://help.ubuntu.com/12.04/serverguide/automatic-updates.html).
+
 # Attributes
 * "rsc_security_updates/security_updates"
 	* Enable repos to check for available updates?
 * "rsc_security_updates/apply_security_updates"
-	* "Automatically download and install new security updates?"
+	* Automatically download and install new security updates?
 
 # Recipes
 
